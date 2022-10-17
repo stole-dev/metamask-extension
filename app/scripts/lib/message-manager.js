@@ -198,7 +198,7 @@ export default class MessageManager extends EventEmitter {
    */
   prepMsgForSigning(msgParams) {
     delete msgParams.metamaskId;
-    return Promise.resolve(msgParams);
+    return msgParams;
   }
 
   /**
